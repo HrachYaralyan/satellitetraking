@@ -1,0 +1,46 @@
+{
+  "name": "example-1",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@craco/craco": "^7.1.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "cesium": "^1.106.1",
+    "concurrently": "^8.2.0",
+    "cors-anywhere": "^0.4.4",
+    "craco-cesium": "^1.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "resium": "^1.16.1",
+    "sweetalert2": "^10.16.9",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start1": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "react-scripts eject",
+    "start": "concurrently \"node proxy.js\" \"npm run start1\""
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
