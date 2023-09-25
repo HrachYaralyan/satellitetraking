@@ -5,10 +5,12 @@
 
 import React, { useEffect, useState } from "react";
 import { Viewer, Entity } from "resium";
-import { Cartesian3, Color } from "cesium";
+import { Cartesian3, Color ,Ion } from "cesium";
 import img1 from "./sat1U.png"
 import { BillboardGraphics, Resource } from "resium";
 import Swal from "sweetalert2";
+
+Ion.defaultAccessToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI5YzUxNjQ4NS0xMGQ3LTQyNjMtODA2OC1iMGRlMGE1NTQzZjEiLCJpZCI6MTYzNDk3LCJpYXQiOjE2OTMzODQ0NDh9.-Hdx36IP2k9bmSDmQ990Gdlw726S9o6BXX3teivgpnk";
 
 
 const proxyUrl = 'http://localhost:8080';
