@@ -13,7 +13,7 @@ import Swal from "sweetalert2";
 Ion.defaultAccessToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI5YzUxNjQ4NS0xMGQ3LTQyNjMtODA2OC1iMGRlMGE1NTQzZjEiLCJpZCI6MTYzNDk3LCJpYXQiOjE2OTMzODQ0NDh9.-Hdx36IP2k9bmSDmQ990Gdlw726S9o6BXX3teivgpnk";
 
 
-const proxyUrl = 'http://localhost:8080';
+// const proxyUrl = 'http://localhost:8080';
 
 function App() {
   const [longANDlat, setongANDlat] = useState([])
@@ -24,7 +24,7 @@ function App() {
       // "https://api.n2yo.com/rest/v1/satellite/above/91.702/-40.014/0/70/18/&apiKey=PHYRDT-U9G4PG-5LS74C-5269",
       try {
         const response = await fetch(
-          `${proxyUrl}/https://api.n2yo.com/rest/v1/satellite/above/91.702/-40.014/0/70/18/&apiKey=PHYRDT-U9G4PG-5LS74C-5269`,
+          `https://sattrackback.vercel.app/api/v1/emojis`,
           {
             headers: {
               "X-Requested-With": "XMLHttpRequest"
